@@ -19,12 +19,17 @@ ul{
 
 .wrapper{
   width: 80%;
+  max-width: 900px;
   margin: auto;
   overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .slider {
   height: 450px;
+  width: 100%;
   margin-bottom: 15px;
   display: flex;
   transition: .7s ease-in-out;
@@ -49,7 +54,6 @@ ul{
 .descrWrapper{
   overflow: hidden;
   max-width: 70%;
-  float: left;
 }
 .descr{
   display: flex;
@@ -68,7 +72,7 @@ ul{
 
 .controls{
   display: flex;
-  float: right;
+  order: 2;
   width: fit-content;
 }
 
@@ -186,18 +190,12 @@ ul{
 }
 
 @media(max-width:900px){
-  
   .descrWrapper{
     max-width: 100%;
-    float: unset;
-  }
-
-  .descr{
-    margin-bottom: 20px;
   }
 
   .controls{
-    float: unset;
+    order: 0;
     margin: 20px auto;
   }
 }
