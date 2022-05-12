@@ -96,16 +96,21 @@ ul{
 
 .controls label:after {
   content: " ";
-	border: 2px solid #ddd;
-	height: 20px;
-	left: -3px;
-	position: absolute;
-	top: -3px;
-	width: 20px;
-	-webkit-border-radius: 50%;
-	-moz-border-radius: 50%;
-	-o-border-radius: 50%;
-	border-radius: 50%;
+  border: 2px solid #ddd;
+  height: 20px;
+  left: -3px;
+  position: absolute;
+  top: -3px;
+  width: 20px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  transition:.3s ease-in-out;
+  -webkit-transition:.3s ease-in-out;
+  -moz-transition:.3s ease-in-out;
+  -ms-transition:.3s ease-in-out;
+  -o-transition:.3s ease-in-out;
 }
 
 .controls label:hover, 
@@ -114,6 +119,12 @@ ul{
 #slide3:checked ~ .controls label:nth-of-type(3),
 #slide4:checked ~ .controls label:nth-of-type(4) {
 	background: #ddd;
+}
+#slide1:checked:hover ~ .controls label:nth-of-type(1)::after,
+#slide2:checked:hover ~ .controls label:nth-of-type(2)::after,
+#slide3:checked:hover ~ .controls label:nth-of-type(3)::after,
+#slide4:checked:hover ~ .controls label:nth-of-type(4)::after {
+  border: 2px solid tomato;
 }
 
 #slide1:checked ~ .slider, #slide1:checked ~ .descrWrapper .descr{
@@ -179,7 +190,6 @@ ul{
   .descrWrapper{
     max-width: 100%;
     float: unset;
-    text-align: center
   }
 
   .descr{
