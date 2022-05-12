@@ -1,0 +1,19 @@
+*, *::before, *::after{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  background-color: rgb(137, 140, 148);
+  padding: 20px 10px;
+}
+
+li{
+  list-style-type: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
