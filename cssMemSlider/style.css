@@ -17,3 +17,119 @@ ul{
   list-style-type: none;
 }
 
+.wrapper{
+  border: 1px solid rgb(255, 255, 255);
+  width: 80%;
+  max-width: 940px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  border-radius:12px ;
+  -webkit-border-radius:12px ;
+  -moz-border-radius:12px ;
+  -ms-border-radius:12px ;
+  -o-border-radius:12px ;
+}
+.slider {
+  height: 450px;
+  margin-bottom: 15px;
+  border-radius:12px ;
+  position: relative;
+  display: flex;
+  -webkit-border-radius:12px ;
+  -moz-border-radius:12px ;
+  -ms-border-radius:12px ;
+  -o-border-radius:12px ;
+  transition: .7s ease-in-out;
+  -webkit-transition: .7s ease-in-out;
+  -moz-transition: .7s ease-in-out;
+  -ms-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
+}
+
+.slide{
+  flex: 0 0 100%;
+  width: inherit;
+  height: inherit;
+  position: relative;
+}
+
+.descr__elem{
+  color: whitesmoke;
+  opacity: 0;
+  margin-left: 15px;
+  max-width: 500px;
+  font-size: 25px;
+  z-index: 0;
+  transition: .7s ease-in-out;
+  -webkit-transition: .7s ease-in-out;
+  -moz-transition: .7s ease-in-out;
+  -ms-transition: .7s ease-in-out;
+  -o-transition: .7s ease-in-out;
+}
+
+.controls{
+  display: flex;
+  float: right;
+}
+
+.inputs {
+	display: none;
+}
+.controls label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 10px;
+  padding: 7px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+  transition: background ease-in-out .3s;
+	-webkit-transition: background ease-in-out .3s;
+	-moz-transition: background ease-in-out .3s;
+	-ms-transition: background ease-in-out .3s;
+	-o-transition: background ease-in-out .3s;
+}
+
+.controls label:after {
+  content: " ";
+	border: 2px solid #ddd;
+	height: 20px;
+	left: -3px;
+	position: absolute;
+	top: -3px;
+	width: 20px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.slide:nth-child(1){
+  background: url(./assets/img/slide1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide:nth-child(2){
+  background: url(./assets/img/slide2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide:nth-child(3){
+  background: url(./assets/img/slide3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.slide:nth-child(4){
+  background: url(./assets/img/slide4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
